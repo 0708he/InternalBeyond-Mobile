@@ -12706,7 +12706,7 @@ function _orientApply(){try{
   setTimeout(function(){try{if(window.IBNative&&window.IBNative.available){var _bg=$('pres-bg');var _row=_bg&&_bg.closest('.tog');if(_row)_row.style.display=''}}catch(e){}},1200);/* v116-p：壳内显露「后台 Presence（系统级）」开关（桥在文末激活，故延时探测；浏览器 / PWA 保持隐藏） */
 })();
 function _vidQNormM(v){v=String(v==null?'m':v);if(v==='384')return 'l';if(v==='768')return 'h';if(v==='512')return 'm';return (v==='l'||v==='h')?v:'m'}/* 画质档位兼容电脑端备份里的 384/512/768 写法 */
-var IB_VER='v252-p',IB_VER_DATE='2026-09-11';
+var IB_VER='v254-p',IB_VER_DATE='2026-09-11';
 (function _appVerDraw(){var e=document.getElementById('app-ver');if(e)e.textContent='InternalBeyond Mobile '+IB_VER+'（'+IB_VER_DATE+'）'})();
 function _ibVeilHeal(){try{setTimeout(function(){try{var v=document.getElementById('lk-preveil');if(!v||v.classList.contains('off'))return;var lk=document.getElementById('lockscr');if(lk){_lkVeilOff();return}if(localStorage.getItem('ib_lockOn')==='1')return;_lkVeilOff()}catch(e){}},1600)}catch(e){}}/* v246-p：启动完成后仍盖幕的静默自愈 */
 function _lkVeilOff(){try{window._ibVeilOff=true;var v=document.getElementById('lk-preveil');if(v){v.classList.add('off');setTimeout(function(){try{v.remove()}catch(e){}},420)}}catch(e){}}/* fix-r4：预遮罩揭幕（任务 8） */
@@ -18286,7 +18286,7 @@ body.theme-infernal .vrec-card{background:rgba(18,26,48,0.94);border-color:rgba(
 .tk-ex{display:grid;grid-template-columns:auto 1fr auto;grid-template-rows:auto auto;gap:0 8px;align-items:baseline;padding:6px 2px;border-bottom:1px solid var(--line);font-size:0.7rem;color:var(--tx3)}
 .tk-ex:last-child{border-bottom:none}
 .tk-ex .t{grid-row:1;grid-column:1;font-variant-numeric:tabular-nums;white-space:nowrap}
-.tk-ex .m{grid-row:1;grid-column:2;min-width:0;color:var(--tx2);overflow-wrap:anywhere;line-height:1.3}
+.tk-ex .m{grid-row:1;grid-column:2;min-width:0;color:var(--tx);overflow-wrap:anywhere;line-height:1.35;background:none!important;border:none!important;box-shadow:none!important;padding:0!important;border-radius:0!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;font-size:0.76rem}.tk-ex .t{color:var(--tx3)}.tk-ex .c{font-variant-numeric:tabular-nums}/* v253-p：模型名不再套气泡，纯文字两行 */
 .tk-ex .c{grid-row:1;grid-column:3;color:var(--tx2);white-space:nowrap;text-align:right}
 .tk-ex .d{grid-row:2;grid-column:1/4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:0.66rem;padding-top:1px}
 
@@ -18794,7 +18794,7 @@ body.theme-infernal .ma-btn svg{filter:drop-shadow(0 1px 0 rgba(255,255,255,0.16
 .ca-ava.site{background-color:#fff}
 body.theme-infernal .ca-ava{box-shadow:0 0 0 1px rgba(228,234,241,.28),0 0 0 4.5px rgba(203,211,221,.08),0 0 0 5.5px rgba(216,223,232,.15),0 10px 22px rgba(0,0,0,.42),inset 0 1px 1px rgba(255,255,255,.13)}/* v143-p：#2 暗色同款玻璃环 */
 
-.ca-duo{--caL:#a9bcd6;--caG:#7f99ba;--caGs:rgba(127,153,186,.3);--caHi:#fff;--caHaloO:.16;--caTubeO:.4;--caBaseO:.85;--caLiqO:.3;--caTailO:.38;--caHeadO:.85;--caGlintO:.8}
+.ca-duo{--caL:#c6dbef;--caG:#a3c4e6;--caGs:rgba(163,196,230,.26);/* v254-p：再降一档饱和（用户：喜欢低饱和） *//* v253-p：明亮态从灰湖蓝改微低饱和天蓝（蓝调不带绿） */--caHi:#fff;--caHaloO:.16;--caTubeO:.4;--caBaseO:.85;--caLiqO:.3;--caTailO:.38;--caHeadO:.85;--caGlintO:.8}
 body.theme-infernal .ca-duo{--caL:#aab5c2;--caG:#e9eef4;--caGs:rgba(224,231,239,.4);--caHi:#fff;--caHaloO:.09;--caTubeO:.15;--caBaseO:.68;--caLiqO:.15;--caTailO:.26;--caHeadO:.92;--caGlintO:.42}/* v144-p：#2 暗色沿用 v143-p 观感数值，一行不动 */
 .ca-duo .ca-ava{z-index:1}
 .ca-orbit{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;display:block}/* v142-p：#2 轨道盘双层 SVG */
@@ -18827,7 +18827,7 @@ body.theme-infernal .ca-duo{--caL:#aab5c2;--caG:#e9eef4;--caGs:rgba(224,231,239,
 .ca-meta2 em.today{color:var(--acc);background:color-mix(in srgb,var(--acc) 10%,transparent)}
 .ca-hbar{position:relative;width:min(100%,220px);height:6px;border-radius:99px;margin-top:12px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.04) 55%),color-mix(in srgb,var(--tx3) 16%,transparent);border:1px solid rgba(255,255,255,.42);box-shadow:inset 0 1px 2px rgba(30,52,92,.16),inset 0 -1px 1px rgba(255,255,255,.30),0 1px 0 rgba(255,255,255,.35)}
 body.theme-infernal .ca-hbar{background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.02) 55%),rgba(10,18,34,.42);border-color:rgba(190,214,246,.20);box-shadow:inset 0 1px 2px rgba(0,0,0,.42),inset 0 -1px 1px rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.05)}
-.ca-hbar i{position:relative;display:block;height:100%;border-radius:inherit;overflow:hidden;background:linear-gradient(180deg,#c8d5e6,#a4b8d2 58%,#8ba3c2);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 1px rgba(46,62,88,.22)}/* v146-p：#1 液柱随「晨雾蓝」同族回暖 */
+.ca-hbar i{position:relative;display:block;height:100%;border-radius:inherit;overflow:hidden;background:linear-gradient(180deg,#e6eff9,#cbdcf0 58%,#aec6e3);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 1px rgba(46,62,88,.22)}/* v146-p：#1 液柱随「晨雾蓝」同族回暖 */
 body.theme-infernal .ca-hbar i{background:linear-gradient(180deg,#e0e6ed,#b8c3d0 58%,#9ba9ba);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 1px rgba(18,28,44,.35)}/* v145-p：#2 暗色液柱银灰款 *//* 渐变液柱＋内高光＝管内液体 */
 .ca-hbar i:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(105deg,transparent 20%,rgba(255,255,255,.55) 45%,rgba(255,255,255,.12) 55%,transparent 75%);background-size:220% 100%;animation:caBarSheen 3.6s ease-in-out infinite;mix-blend-mode:screen}/* 周期斜向流光 */
 @keyframes caBarSheen{0%{background-position:130% 0}55%,100%{background-position:-90% 0}}
